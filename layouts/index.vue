@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <header-component :links="links"></header-component>
+    <header-component :absolute="true" :links="links"></header-component>
     <v-main>
       <nuxt />
     </v-main>
