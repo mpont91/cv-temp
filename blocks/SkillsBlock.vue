@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container v-for="(skill, s) in skills" :key="s" class="px-0">
+    <v-container v-for="(skill, s) in items" :key="s" class="px-0">
       <v-row>
         <v-col>
           <h2 class="title">{{ skill.name }}</h2>
@@ -23,6 +23,12 @@
 
 <script>
 export default {
+  props: {
+    extra: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       skills: [
@@ -116,6 +122,8 @@ export default {
             },
           ],
         },
+      ],
+      skillsExtra: [
         {
           name: 'Testing',
           items: [
@@ -243,6 +251,15 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    items() {
+      const i = this.skills
+      if (this.extra) {
+        i.push(...this.skillsExtra)
+      }
+      return i
+    },
   },
 }
 </script>
