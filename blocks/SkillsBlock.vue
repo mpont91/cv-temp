@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container v-for="(skill, s) in items" :key="s" class="px-0">
+    <v-container v-for="(skill, s) in items" :key="s" fluid class="pa-0 ma-0">
       <v-row>
         <v-col>
           <h2 class="title">{{ skill.name }}</h2>

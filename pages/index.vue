@@ -1,8 +1,15 @@
 <template>
-  <v-container fluid class="pa-0">
-    <v-row no-gutters>
-      <v-col fluid class="mx-auto text-center">
-        <carousel-block></carousel-block>
+  <v-container fluid class="pa-0 ma-0">
+    <v-row>
+      <v-col>
+        <v-carousel hide-delimiters cycle height="100vh">
+          <v-carousel-item
+            v-for="n in 9"
+            :key="n"
+            :src="`https://picsum.photos/4096/2160?image=${n * 2}`"
+            :lazy-src="`https://picsum.photos/409/216?image=${n * 2}`"
+          ></v-carousel-item>
+        </v-carousel>
       </v-col>
     </v-row>
     <v-row>
@@ -45,11 +52,10 @@
 </template>
 
 <script>
-import CarouselBlock from '@/blocks/CarouselBlock'
 import SkillsBlock from '@/blocks/SkillsBlock'
 
 export default {
-  components: { SkillsBlock, CarouselBlock },
+  components: { SkillsBlock },
   layout: 'index',
   data() {
     return {

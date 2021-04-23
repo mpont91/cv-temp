@@ -1,6 +1,6 @@
 <template>
-  <v-footer class="grey darken-4">
-    <v-container fluid class="py-4">
+  <v-footer class="grey darken-4 px-md-12 mt-12">
+    <v-container fluid class="py-4 px-md-12">
       <v-row align="center">
         <v-col cols="12" md="3" class="text-center text-md-left">
           <v-avatar tile>
@@ -19,16 +19,12 @@
           </p>
         </v-col>
         <v-col cols="12" md="3" class="text-center text-md-right">
-          <v-btn dark icon>
-            <v-icon>mdi-twitter</v-icon>
-          </v-btn>
-          <v-btn dark icon>
-            <v-icon>mdi-facebook</v-icon>
-          </v-btn>
-          <v-btn dark icon>
-            <v-icon>mdi-instagram</v-icon>
-          </v-btn>
-          <v-btn dark icon>
+          <v-btn
+            dark
+            icon
+            href="https://www.linkedin.com/in/marc-pont-casadevall-282b454b/"
+            target="_blank"
+          >
             <v-icon>mdi-linkedin</v-icon>
           </v-btn>
         </v-col>
