@@ -48,7 +48,39 @@ export default {
     links: {
       type: Array,
       default() {
-        return []
+        return [
+          {
+            id: 'home',
+            text: 'Home',
+            to: { name: 'index' },
+            exact: true,
+          },
+          {
+            id: 'skills',
+            text: 'Skills',
+            to: { name: 'skills' },
+          },
+          {
+            id: '2',
+            text: 'Menu 2',
+            to: { name: 'menu2' },
+          },
+          {
+            id: '3',
+            text: 'Menu 3',
+            to: { name: 'menu3' },
+          },
+          {
+            id: '4',
+            text: 'Menu 4',
+            to: { name: 'menu4' },
+          },
+          {
+            id: '5',
+            text: 'Menu 5',
+            to: { name: 'menu5' },
+          },
+        ]
       },
     },
     absolute: {
