@@ -14,7 +14,12 @@
             </v-icon>
             {{ item.title }}
           </div>
-          <v-progress-linear class="progress" height="3" :value="item.value" />
+          <v-progress-linear
+            :color="skill.color"
+            class="progress"
+            height="3"
+            :value="item.value"
+          />
         </v-col>
       </v-row>
     </v-container>
@@ -34,6 +39,7 @@ export default {
       skills: [
         {
           name: 'Languages',
+          color: 'blue',
           items: [
             {
               title: 'PHP',
@@ -64,6 +70,7 @@ export default {
         },
         {
           name: 'frameworks',
+          color: 'green',
           items: [
             {
               title: 'Laravel',
@@ -109,6 +116,7 @@ export default {
         },
         {
           name: 'Development tools',
+          color: 'yellow',
           items: [
             {
               title: 'Git',
@@ -126,6 +134,7 @@ export default {
       skillsExtra: [
         {
           name: 'Testing',
+          color: 'brown',
           items: [
             {
               title: 'Unit testing',
@@ -146,6 +155,7 @@ export default {
         },
         {
           name: 'Databases',
+          color: 'purple',
           items: [
             {
               title: 'Mysql',
@@ -166,6 +176,7 @@ export default {
         },
         {
           name: 'IDE',
+          color: 'orange',
           items: [
             {
               title: 'Phpstorm',
@@ -191,6 +202,7 @@ export default {
         },
         {
           name: 'Metodologies',
+          color: 'indigo',
           items: [
             {
               title: 'Kanban',
@@ -206,6 +218,7 @@ export default {
         },
         {
           name: 'Servers',
+          color: 'red',
           items: [
             {
               title: 'Ubuntu',
@@ -236,6 +249,7 @@ export default {
         },
         {
           name: 'Ticketing',
+          color: 'cyan',
           items: [
             {
               title: 'Clickup',
