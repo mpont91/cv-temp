@@ -73,30 +73,31 @@ export default {
     return {
       education: [
         {
-          year: '2010',
-          title: 'Test1',
-        },
-        {
-          year: '2011',
-          title: 'Test2',
-        },
-        {
           year: '2012',
-          title: 'Test3',
+          title: 'Technical Engineering in Computer Systems',
+          location: 'Universitat de Girona',
+        },
+        {
+          year: '2009',
+          title: 'Technical Engineering in Computer Systems',
+          location: 'Universitat de Girona',
         },
       ],
       experience: [
         {
-          year: '2015',
-          title: 'Test1',
-        },
-        {
           year: '2018',
-          title: 'Test2',
+          title: 'Full stack developer & IT management',
+          localtion: 'Xarxafarmacèutica SL',
         },
         {
-          year: '2020',
-          title: 'Test3',
+          year: '2016',
+          title: 'E-commerce developer',
+          location: 'Global Software Partner',
+        },
+        {
+          year: '2014',
+          title: 'Full stack developer & IT management',
+          location: 'Grup Puig Infante',
         },
       ],
     }
