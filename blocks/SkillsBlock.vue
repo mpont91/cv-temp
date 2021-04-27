@@ -8,18 +8,23 @@
       </v-row>
       <v-row>
         <v-col v-for="(item, i) in skill.items" :key="i">
-          <div class="align-center">
-            <v-icon>
-              {{ item.icon }}
-            </v-icon>
-            {{ item.title }}
-          </div>
-          <v-progress-linear
-            :color="skill.color"
-            class="progress"
-            height="3"
-            :value="item.value"
-          />
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <div class="align-center" v-bind="attrs" v-on="on">
+                <v-icon>
+                  {{ item.icon }}
+                </v-icon>
+                {{ item.title }}
+              </div>
+              <v-progress-linear
+                :color="skill.color"
+                class="progress"
+                height="3"
+                :value="item.value"
+              />
+            </template>
+            <span>{{ item.value }}%</span>
+          </v-tooltip>
         </v-col>
       </v-row>
     </v-container>
