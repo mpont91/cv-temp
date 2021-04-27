@@ -25,6 +25,12 @@
               <skills-block></skills-block>
             </v-col>
           </v-row>
+        </v-container>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-container>
           <v-row>
             <v-col>
               <h1 class="display-1">Education</h1>
@@ -35,6 +41,12 @@
               <timeline-component :items="education"></timeline-component>
             </v-col>
           </v-row>
+        </v-container>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-container>
           <v-row>
             <v-col>
               <h1 class="display-1">Experience</h1>
