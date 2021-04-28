@@ -9,7 +9,7 @@
           <v-col>
             <v-card raised>
               <v-card-title>{{ item.title }}</v-card-title>
-              <v-card-text>{{ item.title }}</v-card-text>
+              <v-card-text>{{ item.location }}</v-card-text>
             </v-card>
           </v-col>
         </v-row>

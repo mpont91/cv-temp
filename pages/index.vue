@@ -33,12 +33,12 @@
         <v-container>
           <v-row>
             <v-col>
-              <h1 class="display-1">Education</h1>
+              <h1 class="display-1">Experience</h1>
             </v-col>
           </v-row>
           <v-row>
             <v-col>
-              <timeline-component :items="education"></timeline-component>
+              <timeline-component :items="experience"></timeline-component>
             </v-col>
           </v-row>
         </v-container>
@@ -49,12 +49,12 @@
         <v-container>
           <v-row>
             <v-col>
-              <h1 class="display-1">Experience</h1>
+              <h1 class="display-1">Education</h1>
             </v-col>
           </v-row>
           <v-row>
             <v-col>
-              <timeline-component :items="experience"></timeline-component>
+              <timeline-component :items="education"></timeline-component>
             </v-col>
           </v-row>
         </v-container>
@@ -87,7 +87,7 @@ export default {
         {
           year: '2018',
           title: 'Full stack developer & IT management',
-          localtion: 'Xarxafarmacèutica SL',
+          location: 'Xarxafarmacèutica SL',
         },
         {
           year: '2016',
