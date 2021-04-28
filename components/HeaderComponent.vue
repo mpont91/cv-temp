@@ -61,14 +61,14 @@ export default {
             to: { name: 'skills' },
           },
           {
-            id: '2',
-            text: 'Menu 2',
-            to: { name: 'menu2' },
+            id: 'experience',
+            text: 'Experience',
+            to: { name: 'experience' },
           },
           {
-            id: '3',
-            text: 'Menu 3',
-            to: { name: 'menu3' },
+            id: 'education',
+            text: 'Education',
+            to: { name: 'education' },
           },
           {
             id: '4',

@@ -38,7 +38,7 @@
           </v-row>
           <v-row>
             <v-col>
-              <timeline-component :items="experience"></timeline-component>
+              <experience-block></experience-block>
             </v-col>
           </v-row>
         </v-container>
@@ -54,7 +54,7 @@
           </v-row>
           <v-row>
             <v-col>
-              <timeline-component :items="education"></timeline-component>
+              <education-block></education-block>
             </v-col>
           </v-row>
         </v-container>
@@ -65,43 +65,12 @@
 
 <script>
 import SkillsBlock from '@/blocks/SkillsBlock'
+import ExperienceBlock from '@/blocks/ExperienceBlock'
+import EducationBlock from '@/blocks/EducationBlock'
 
 export default {
-  components: { SkillsBlock },
+  components: { EducationBlock, ExperienceBlock, SkillsBlock },
   layout: 'index',
-  data() {
-    return {
-      education: [
-        {
-          year: '2012',
-          title: 'Technical Engineering in Computer Systems',
-          location: 'Universitat de Girona',
-        },
-        {
-          year: '2009',
-          title: 'Technical Engineering in Computer Systems',
-          location: 'Universitat de Girona',
-        },
-      ],
-      experience: [
-        {
-          year: '2018',
-          title: 'Full stack developer & IT management',
-          location: 'Xarxafarmacèutica SL',
-        },
-        {
-          year: '2016',
-          title: 'E-commerce developer',
-          location: 'Global Software Partner',
-        },
-        {
-          year: '2014',
-          title: 'Full stack developer & IT management',
-          location: 'Grup Puig Infante',
-        },
-      ],
-    }
-  },
   head() {
     return {
       title: 'Home page',

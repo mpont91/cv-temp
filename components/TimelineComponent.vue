@@ -9,7 +9,10 @@
           <v-col>
             <v-card raised>
               <v-card-title>{{ item.title }}</v-card-title>
-              <v-card-text>{{ item.location }}</v-card-text>
+              <v-card-text>
+                <span>{{ item.location }}</span>
+                <span v-if="extra"><br />{{ item.time }}</span>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -26,6 +29,10 @@ export default {
       default() {
         return []
       },
+    },
+    extra: {
+      type: Boolean,
+      default: false,
     },
   },
 }
