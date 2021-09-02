@@ -71,14 +71,9 @@ export default {
             to: { name: 'education' },
           },
           {
-            id: '4',
-            text: 'Menu 4',
-            to: { name: 'menu4' },
-          },
-          {
-            id: '5',
-            text: 'Menu 5',
-            to: { name: 'menu5' },
+            id: 'portfolio',
+            text: 'Portfolio',
+            to: { name: 'portfolio' },
           },
         ]
       },

@@ -60,6 +60,22 @@
         </v-container>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col>
+        <v-container>
+          <v-row>
+            <v-col>
+              <h1 class="display-1">Portfolio</h1>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <portfolio-block></portfolio-block>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -67,9 +83,10 @@
 import SkillsBlock from '@/blocks/SkillsBlock'
 import ExperienceBlock from '@/blocks/ExperienceBlock'
 import EducationBlock from '@/blocks/EducationBlock'
+import PortfolioBlock from '@/blocks/PortfolioBlock'
 
 export default {
-  components: { EducationBlock, ExperienceBlock, SkillsBlock },
+  components: { EducationBlock, ExperienceBlock, SkillsBlock, PortfolioBlock },
   layout: 'index',
   head() {
     return {
