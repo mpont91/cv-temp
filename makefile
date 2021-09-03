@@ -1,5 +1,6 @@
 all:
 	npm --silent ci --no-progress
+	npm run build
 	npm run generate
 
 production:
