@@ -42,6 +42,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -75,6 +76,11 @@ export default {
 
   googleAnalytics: {
     id: 'UA-206606764-1',
+  },
+
+  sitemap: {
+    hostname: 'https://www.mpont91.com',
+    gzip: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
