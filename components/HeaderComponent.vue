@@ -10,7 +10,7 @@
       :to="{ name: 'index' }"
       custom
     >
-      <h1 class="headline" @click="navigate">Hire Me!</h1>
+      <h1 class="headline" @click="navigate">Marc Pont</h1>
     </NuxtLink>
     <div class="flex-grow-1" />
     <v-toolbar-items v-if="links.length > 0" class="hidden-md-and-down">
