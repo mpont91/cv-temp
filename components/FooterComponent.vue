@@ -15,7 +15,7 @@
         </v-col>
         <v-col cols="12" md="6">
           <p class="text-no-wrap text-center text-h6 white--text ma-0">
-            Hire me!
+            Marc Pont
           </p>
         </v-col>
         <v-col cols="12" md="3" class="text-center text-md-right">

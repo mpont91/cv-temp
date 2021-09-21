@@ -6,15 +6,16 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Hire Me',
-    title: 'Hire Me',
+    titleTemplate: '%s - Marc Pont',
+    title: 'Marc Pont - personal website',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Marc Pont (slayerbleast) personal website',
+        content:
+          'Marc Pont personal website. I work on Full stack developer role. I love Laravel and Vue.js frameworks. I like working on a freelance projects on the side',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],

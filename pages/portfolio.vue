@@ -36,5 +36,17 @@ import PortfolioBlock from '@/blocks/PortfolioBlock'
 
 export default {
   components: { PortfolioBlock },
+  head() {
+    return {
+      title: 'Portfolio',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'List of projects I worked on or am still working on.',
+        },
+      ],
+    }
+  },
 }
 </script>

@@ -90,7 +90,7 @@ export default {
   layout: 'index',
   head() {
     return {
-      title: 'Home page',
+      title: 'Home',
     }
   },
 }

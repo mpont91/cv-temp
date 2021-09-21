@@ -36,5 +36,17 @@ import ExperienceBlock from '@/blocks/ExperienceBlock'
 
 export default {
   components: { ExperienceBlock },
+  head() {
+    return {
+      title: 'Experience',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Experience obtained in the companies where I have worked',
+        },
+      ],
+    }
+  },
 }
 </script>

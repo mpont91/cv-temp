@@ -36,5 +36,17 @@ import SkillsBlock from '@/blocks/SkillsBlock'
 
 export default {
   components: { SkillsBlock },
+  head() {
+    return {
+      title: 'Skills',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Self evaluation of my development skills',
+        },
+      ],
+    }
+  },
 }
 </script>

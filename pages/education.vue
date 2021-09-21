@@ -36,5 +36,17 @@ import EducationBlock from '@/blocks/EducationBlock'
 
 export default {
   components: { EducationBlock },
+  head() {
+    return {
+      title: 'Education',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Education received',
+        },
+      ],
+    }
+  },
 }
 </script>
