@@ -17,7 +17,7 @@
           class="grow"
         >
           <v-tooltip bottom>
-            <template v-slot:activator="{ on, attrs }">
+            <template #activator="{ on, attrs }">
               <div class="align-center" v-bind="attrs" v-on="on">
                 <v-icon>
                   {{ item.icon }}
