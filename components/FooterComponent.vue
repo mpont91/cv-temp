@@ -27,6 +27,25 @@
           >
             <v-icon>mdi-linkedin</v-icon>
           </v-btn>
+          <v-btn
+            dark
+            icon
+            href="https://github.com/slayerbleast"
+            target="_blank"
+          >
+            <v-icon>mdi-github</v-icon>
+          </v-btn>
+          <v-btn
+            dark
+            icon
+            href="https://twitter.com/slayerbleast"
+            target="_blank"
+          >
+            <v-icon>mdi-twitter</v-icon>
+          </v-btn>
+          <v-btn dark icon href="mailto:mpont91@gmail.com" target="_blank">
+            <v-icon>mdi-email</v-icon>
+          </v-btn>
         </v-col>
       </v-row>
     </v-container>
