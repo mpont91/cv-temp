@@ -14,19 +14,19 @@ export default {
     return {
       experience: [
         {
-          year: 'Now - 2018',
+          year: '2018',
           title: 'Full stack developer & IT management',
           location: 'Xarxafarmacèutica SL',
           time: '07/2018 - now',
         },
         {
-          year: '2018 - 2016',
+          year: '2016',
           title: 'E-commerce developer',
           location: 'Global Software Partner',
           time: '07/2016 - 07/2018',
         },
         {
-          year: '2016 - 2014',
+          year: '2014',
           title: 'Full stack developer & IT management',
           location: 'Grup Puig Infante',
           time: '07/2014 - 07/2016',

@@ -1,14 +1,16 @@
 <template>
   <v-timeline dense>
     <v-timeline-item v-for="(item, i) in items" :key="i" large>
-      <v-container>
+      <v-container fluid>
         <v-row align="center">
-          <v-col cols="2" sm="1">
-            <p class="py-0 my-0">{{ item.year }}</p>
+          <v-col cols="3" sm="2" md="1">
+            <p class="text-center text-sm-left py-0 my-0">{{ item.year }}</p>
           </v-col>
-          <v-col>
+          <v-col cols="9" sm="10" md="11">
             <v-card raised>
-              <v-card-title>{{ item.title }}</v-card-title>
+              <v-card-title style="word-break: normal">
+                {{ item.title }}
+              </v-card-title>
               <v-card-text>
                 <span>{{ item.location }}</span>
                 <span v-if="extra"><br />{{ item.time }}</span>

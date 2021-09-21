@@ -4,7 +4,9 @@
       <v-col
         v-for="(item, i) in portfolio"
         :key="i"
-        cols="4"
+        cols="12"
+        sm="6"
+        lg="4"
         class="text-center"
       >
         <v-hover v-slot="{ hover }">

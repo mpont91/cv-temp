@@ -14,13 +14,13 @@ export default {
     return {
       education: [
         {
-          year: '2015 - 2012',
+          year: '2012',
           title: 'Computer Engineering',
           location: 'Universitat de Girona',
           time: '09/2012 - 07/2014',
         },
         {
-          year: '2012 - 2009',
+          year: '2009',
           title: 'Technical Engineering in Computer Systems',
           location: 'Universitat de Girona',
           time: '09/2009 - 07/2012',

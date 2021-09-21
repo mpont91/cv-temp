@@ -7,7 +7,15 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col v-for="(item, i) in skill.items" :key="i">
+        <v-col
+          v-for="(item, i) in skill.items"
+          :key="i"
+          cols="12"
+          sm="6"
+          md="4"
+          lg="auto"
+          class="grow"
+        >
           <v-tooltip bottom>
             <template v-slot:activator="{ on, attrs }">
               <div class="align-center" v-bind="attrs" v-on="on">
