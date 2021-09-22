@@ -4,10 +4,9 @@
       <v-col>
         <v-carousel hide-delimiters cycle height="100vh">
           <v-carousel-item
-            v-for="n in 9"
+            v-for="n in 5"
             :key="n"
-            :src="`https://picsum.photos/4096/2160?image=${n * 2}`"
-            :lazy-src="`https://picsum.photos/409/216?image=${n * 2}`"
+            :src="`/wallpapers/${n}.jpg`"
           ></v-carousel-item>
         </v-carousel>
       </v-col>

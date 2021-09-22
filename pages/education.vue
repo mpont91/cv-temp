@@ -2,14 +2,7 @@
   <v-container fluid class="pa-0 ma-0">
     <v-row>
       <v-col>
-        <v-carousel hide-delimiters cycle height="400px">
-          <v-carousel-item
-            v-for="n in 9"
-            :key="n"
-            :src="`https://picsum.photos/4096/400?grayscale&image=${n * 4}`"
-            :lazy-src="`https://picsum.photos/409/40?grayscale&image=${n * 4}`"
-          ></v-carousel-item>
-        </v-carousel>
+        <banners-component></banners-component>
       </v-col>
     </v-row>
     <v-row>
