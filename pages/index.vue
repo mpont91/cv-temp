@@ -6,7 +6,7 @@
           <v-carousel-item
             v-for="n in 5"
             :key="n"
-            :src="`/wallpapers/${n}.jpg`"
+            :src="`/wallpapers/${n}.webp`"
           ></v-carousel-item>
         </v-carousel>
       </v-col>

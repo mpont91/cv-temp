@@ -5,7 +5,7 @@
         <v-col cols="12" md="3" class="text-center text-md-left">
           <v-avatar tile>
             <v-img
-              src="/logo.png"
+              src="/logo.webp"
               class="ma-auto mx-md-0"
               max-width="50"
               max-height="50"

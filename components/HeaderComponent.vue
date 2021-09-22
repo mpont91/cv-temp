@@ -1,7 +1,7 @@
 <template>
   <v-app-bar height="100" :absolute="absolute">
     <NuxtLink :to="{ name: 'index' }">
-      <v-img src="/logo.png" max-width="50" max-height="50" />
+      <v-img src="/logo.webp" max-width="50" max-height="50" />
     </NuxtLink>
 
     <NuxtLink

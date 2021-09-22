@@ -18,7 +18,7 @@ export default {
           'Marc Pont personal website. I work on Full stack developer role. I love Laravel and Vue.js frameworks. I like working on a freelance projects on the side',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.webp' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
