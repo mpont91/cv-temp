@@ -60,9 +60,6 @@ export default {
     manifest: {
       lang: 'en',
     },
-    icon: {
-      fileName: 'icon.webp',
-    },
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
