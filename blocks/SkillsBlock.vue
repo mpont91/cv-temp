@@ -16,23 +16,16 @@
           lg="auto"
           class="grow"
         >
-          <v-tooltip bottom>
-            <template #activator="{ on, attrs }">
-              <div class="align-center" v-bind="attrs" v-on="on">
-                <v-icon>
-                  {{ item.icon }}
-                </v-icon>
-                {{ item.title }}
-              </div>
-              <v-progress-linear
-                :color="skill.color"
-                class="progress"
-                height="3"
-                :value="item.value"
-              />
-            </template>
-            <span>{{ item.value }}%</span>
-          </v-tooltip>
+          <v-icon>{{ item.icon }}</v-icon>
+          {{ item.title }}
+          <v-rating
+            :color="skill.color"
+            readonly
+            half-increments
+            length="5"
+            size="15"
+            :value="item.value"
+          ></v-rating>
         </v-col>
       </v-row>
     </v-container>
@@ -55,29 +48,24 @@ export default {
           color: 'blue',
           items: [
             {
+              title: 'HTML',
+              icon: 'mdi-language-html',
+              value: 4.5,
+            },
+            {
+              title: 'CSS',
+              icon: 'mdi-language-css',
+              value: 4.5,
+            },
+            {
               title: 'PHP',
               icon: 'mdi-language-php',
-              value: 90,
+              value: 5,
             },
             {
               title: 'JavaScript',
               icon: 'mdi-language-javascript',
-              value: 80,
-            },
-            {
-              title: 'Java',
-              icon: 'mdi-language-java',
-              value: 65,
-            },
-            {
-              title: 'Python',
-              icon: 'mdi-language-python',
-              value: 55,
-            },
-            {
-              title: 'C/C++',
-              icon: 'mdi-language-cpp',
-              value: 45,
+              value: 4,
             },
           ],
         },
@@ -88,42 +76,37 @@ export default {
             {
               title: 'Laravel',
               icon: 'mdi-laravel',
-              value: 80,
-            },
-            {
-              title: 'Vue.js',
-              icon: 'mdi-vuejs',
-              value: 60,
-            },
-            {
-              title: 'Nuxt.js',
-              icon: 'mdi-nuxt',
-              value: 40,
-            },
-            {
-              title: 'Vuetify',
-              icon: 'mdi-vuetify',
-              value: 65,
-            },
-            {
-              title: 'React.js',
-              icon: 'mdi-react',
-              value: 60,
+              value: 5,
             },
             {
               title: 'Symfony',
               icon: 'mdi-symfony',
-              value: 55,
-            },
-            {
-              title: 'Wordpress',
-              icon: 'mdi-wordpress',
-              value: 45,
+              value: 3.5,
             },
             {
               title: 'Magento2',
               icon: 'mdi-magento2',
-              value: 40,
+              value: 2.5,
+            },
+            {
+              title: 'Vue.js',
+              icon: 'mdi-vuejs',
+              value: 4.5,
+            },
+            {
+              title: 'Nuxt.js',
+              icon: 'mdi-nuxt',
+              value: 3,
+            },
+            {
+              title: 'Vuetify',
+              icon: 'mdi-vuetify',
+              value: 4,
+            },
+            {
+              title: 'React.js',
+              icon: 'mdi-react',
+              value: 2.5,
             },
           ],
         },
@@ -134,12 +117,12 @@ export default {
             {
               title: 'Git',
               icon: 'mdi-git',
-              value: 85,
+              value: 4.5,
             },
             {
               title: 'Docker',
               icon: 'mdi-docker',
-              value: 70,
+              value: 4,
             },
           ],
         },
@@ -152,64 +135,17 @@ export default {
             {
               title: 'Unit testing',
               icon: 'mdi-unit-testing',
-              value: 85,
+              value: 5,
             },
             {
               title: 'Integration testing',
               icon: 'mdi-integration-testing',
-              value: 70,
+              value: 4,
             },
             {
               title: 'Test-driven development',
               icon: 'mdi-test-driven',
-              value: 60,
-            },
-          ],
-        },
-        {
-          name: 'Databases',
-          color: 'purple',
-          items: [
-            {
-              title: 'Mysql',
-              icon: 'mdi-mysql',
-              value: 85,
-            },
-            {
-              title: 'Postgresql',
-              icon: 'mdi-postgresql',
-              value: 70,
-            },
-            {
-              title: 'Sqlserver',
-              icon: 'mdi-sqlserver',
-              value: 60,
-            },
-          ],
-        },
-        {
-          name: 'IDE',
-          color: 'orange',
-          items: [
-            {
-              title: 'Phpstorm',
-              icon: 'mdi-phpstorm',
-              value: 85,
-            },
-            {
-              title: 'VScode',
-              icon: 'mdi-microsoft-visual-studio-code',
-              value: 70,
-            },
-            {
-              title: 'Netbeans',
-              icon: 'mdi-netbeans',
-              value: 70,
-            },
-            {
-              title: 'Eclipse',
-              icon: 'mdi-eclipse',
-              value: 60,
+              value: 4.5,
             },
           ],
         },
@@ -220,59 +156,33 @@ export default {
             {
               title: 'Kanban',
               icon: 'mdi-kanban',
-              value: 90,
+              value: 4,
             },
             {
-              title: 'Scrum',
-              icon: 'mdi-scrum',
-              value: 70,
+              title: 'SOLID design principles',
+              icon: '',
+              value: 4.5,
+            },
+            {
+              title: 'Rest API design',
+              icon: 'mdi-api',
+              value: 5,
             },
           ],
         },
         {
-          name: 'Servers',
-          color: 'red',
-          items: [
-            {
-              title: 'Ubuntu',
-              icon: 'mdi-ubuntu',
-              value: 90,
-            },
-            {
-              title: 'Debian',
-              icon: 'mdi-debian',
-              value: 90,
-            },
-            {
-              title: 'Nginx',
-              icon: 'mdi-nginx',
-              value: 90,
-            },
-            {
-              title: 'Apache',
-              icon: 'mdi-apache',
-              value: 80,
-            },
-            {
-              title: 'Windows IIS',
-              icon: 'mdi-microsoft-windows',
-              value: 70,
-            },
-          ],
-        },
-        {
-          name: 'Ticketing',
+          name: 'Project management software',
           color: 'cyan',
           items: [
             {
               title: 'Clickup',
               icon: 'mdi-clickup',
-              value: 80,
+              value: 4,
             },
             {
               title: 'Jira',
               icon: 'mdi-jira',
-              value: 70,
+              value: 3.5,
             },
           ],
         },
