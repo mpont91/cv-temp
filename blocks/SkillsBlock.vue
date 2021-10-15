@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container v-for="(skill, s) in items" :key="s" fluid class="pa-0 ma-0">
+    <v-container v-for="(skill, s) in skills" :key="s" fluid class="pa-0 ma-0">
       <v-row>
         <v-col>
           <h2 class="title">{{ skill.name }}</h2>
@@ -14,7 +14,7 @@
           sm="6"
           md="4"
           lg="auto"
-          class="grow"
+          class="me-4"
         >
           <v-icon>{{ item.icon }}</v-icon>
           {{ item.title }}
@@ -126,8 +126,6 @@ export default {
             },
           ],
         },
-      ],
-      skillsExtra: [
         {
           name: 'Testing',
           color: 'brown',
@@ -188,15 +186,6 @@ export default {
         },
       ],
     }
-  },
-  computed: {
-    items() {
-      const i = this.skills
-      if (this.extra) {
-        i.push(...this.skillsExtra)
-      }
-      return i
-    },
   },
 }
 </script>
