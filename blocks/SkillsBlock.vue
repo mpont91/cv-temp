@@ -135,7 +135,7 @@ export default {
             {
               title: 'Unit testing',
               icon: 'mdi-unit-testing',
-              value: 5,
+              value: 4.5,
             },
             {
               title: 'Integration testing',
@@ -156,7 +156,7 @@ export default {
             {
               title: 'Kanban',
               icon: 'mdi-kanban',
-              value: 4,
+              value: 3.5,
             },
             {
               title: 'SOLID design principles',
