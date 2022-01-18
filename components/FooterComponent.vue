@@ -27,12 +27,7 @@
           >
             <v-icon>mdi-linkedin</v-icon>
           </v-btn>
-          <v-btn
-            dark
-            icon
-            href="https://github.com/slayerbleast"
-            target="_blank"
-          >
+          <v-btn dark icon href="https://github.com/mpont91" target="_blank">
             <v-icon>mdi-github</v-icon>
           </v-btn>
           <v-btn
