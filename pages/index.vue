@@ -85,7 +85,7 @@ import EducationBlock from '@/blocks/EducationBlock'
 import PortfolioBlock from '@/blocks/PortfolioBlock'
 
 export default {
-  components: { EducationBlock, ExperienceBlock, SkillsBlock, PortfolioBlock },
+  components: { SkillsBlock, ExperienceBlock, EducationBlock, PortfolioBlock },
   layout: 'index',
   head() {
     return {

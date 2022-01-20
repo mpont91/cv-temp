@@ -2,7 +2,7 @@
   <v-container fluid class="pa-0 ma-0">
     <v-row>
       <v-col>
-        <banners-component></banners-component>
+        <banners-component :slider-start="4"></banners-component>
       </v-col>
     </v-row>
     <v-row>
@@ -25,10 +25,11 @@
 </template>
 
 <script>
+import BannersComponent from '@/components/BannersComponent'
 import PortfolioBlock from '@/blocks/PortfolioBlock'
 
 export default {
-  components: { PortfolioBlock },
+  components: { BannersComponent, PortfolioBlock },
   head() {
     return {
       title: 'Portfolio',
